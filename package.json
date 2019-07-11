@@ -1,0 +1,29 @@
+{
+  "name": "singlepricegridcomponent",
+  "version": "1.0.0",
+  "description": "Webpack test",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madmurt/SinglePriceGridComponent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madmurt/SinglePriceGridComponent/issues"
+  },
+  "homepage": "https://github.com/Madmurt/SinglePriceGridComponent#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-loader": "^8.0.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-loader": "0.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  }
+}
