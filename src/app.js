@@ -1,4 +1,3 @@
 import {bro} from './test.js';
-import styles from './app.module.scss';
+import styles from './styles.scss';
 
-alert(bro("hey"));

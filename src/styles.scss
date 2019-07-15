@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+body{
+  background: cyan;
+  font-family: 'Karla', sans-serif;
+  font-size: $font-size_16;
+  color: black;
+}
+
+.container{
+  position: absolute;
+  display: grid;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 35rem;
+  width: 50rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px; 
+}
+
+.message{
+  grid-column:  1 /span 2;
+  grid-row: 1;
+  background: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.offer{
+  grid-column:  1;
+  grid-row: 2;
+  background:  $cyan;
+  border-bottom-left-radius : 10px;
+}
+
+.about-us{
+  grid-column:  2;
+  grid-row: 2;
+  background: $grayish_blue;
+  border-bottom-right-radius : 10px;
+}
