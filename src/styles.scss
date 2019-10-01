@@ -16,8 +16,8 @@ body{
   left: 0;
   margin: auto;
   height: 35rem;
-  width: 50rem;
-  grid-template-rows: 1fr 1fr;
+  width: 45rem;
+  grid-template-rows: 1fr 1.2fr;
   grid-template-columns: 1fr 1fr;
   border-radius: 10px; 
 }
@@ -31,6 +31,14 @@ body{
 
   padding-top: 2rem;
   padding-left: 3rem;
+
+  .main-heading {
+    color: $grayish_blue;
+  }
+
+  .sub-heading {
+    color: $bright_yellow;
+  }
 }
 
 .offer{
@@ -38,6 +46,38 @@ body{
   grid-row: 2;
   background:  $cyan;
   border-bottom-left-radius : 10px;
+
+  padding-top: 2rem;
+  padding-left: 3rem;
+
+  .currency{
+    font-size: 2rem;
+    color: $white;
+    font-weight: $font-weight_700;
+  }
+
+  .muted-text{
+    color: $light_gray;
+    font-size: 1.2rem;
+    font-weight: $font-weight_400;
+  }
+
+  .signup-btn{
+    height: 3.5rem;
+    width: 80%;
+    background: $bright_yellow;
+    border: none;
+    border-radius: 8px;
+    color: $white;
+    font-size: 1.2rem;
+    font-weight: $font-weight_700;
+    box-shadow: 7px 10px 16px -12px rgba(0,0,0,0.56);
+
+    &:hover{
+      background: $btn_hover_colour;
+      cursor: pointer;
+    }
+  }
 }
 
 .about-us{
@@ -45,4 +85,31 @@ body{
   grid-row: 2;
   background: $grayish_blue;
   border-bottom-right-radius : 10px;
+
+  padding-top: 2rem;
+  padding-left: 3rem;
+
+  .features{
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.4rem;
+    li {
+      color: $light_gray;
+    }
+  }
+}
+
+.info-text{
+  color:$cyan;
+  font-weight: 400;
+  line-height: 2rem;
+
+  &.white{
+    color: $white;
+  }
+}
+
+.secondary-heading{
+  color: $white;
+  font-size: 1.2rem;
 }
