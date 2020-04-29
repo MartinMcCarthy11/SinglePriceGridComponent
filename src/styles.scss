@@ -24,6 +24,12 @@ body{
   .sub-heading{
     color: $bright_yellow;
   }
+
+  @media screen and (max-width: 375px) {
+    grid-template-rows: 1fr 1.2fr 1.2fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
 
 .message{
@@ -43,6 +49,11 @@ body{
   .sub-heading {
     color: $bright_yellow;
   }
+
+  @media screen and (max-width: 375px) {
+    grid-column:  1;
+    border-radius: 0;
+  }
 }
 
 .offer{
@@ -53,6 +64,7 @@ body{
 
   padding-top: 2rem;
   padding-left: 3rem;
+  padding-right: 3rem;
 
   .currency{
     font-size: 2rem;
@@ -67,8 +79,10 @@ body{
   }
 
   .signup-btn{
+    display: block;
     height: 3.5rem;
-    width: 80%;
+    width: 100%;
+    margin: 0 auto;
     background: $bright_yellow;
     border: none;
     border-radius: 8px;
@@ -80,7 +94,14 @@ body{
     &:hover{
       background: $btn_hover_colour;
       cursor: pointer;
-    }
+    }  
+  }
+
+  @media screen and (max-width: 375px) {
+    border-radius: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -100,6 +121,12 @@ body{
     li {
       color: $light_gray;
     }
+  }
+  
+  @media screen and (max-width: 375px) {
+    grid-column:  1;
+    grid-row: 3;
+    border-radius: 0;
   }
 }
 
