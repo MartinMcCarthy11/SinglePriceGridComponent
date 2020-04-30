@@ -42,6 +42,7 @@ body{
   padding-top: 2rem;
   padding-left: 3rem;
 
+
   .main-heading {
     color: $grayish_blue;
   }
@@ -50,9 +51,21 @@ body{
     color: $bright_yellow;
   }
 
+  .info-text-break{
+    display: block;
+  }
+
   @media screen and (max-width: 375px) {
     grid-column:  1;
     border-radius: 0;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 1.6rem;
+    padding-right: 1.5rem;
+
+    .info-text-break{
+      display: inline;
+    }
   }
 }
 
@@ -102,6 +115,7 @@ body{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
+    padding-top: 1rem;
   }
 }
 
@@ -127,6 +141,10 @@ body{
     grid-column:  1;
     grid-row: 3;
     border-radius: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -134,6 +152,7 @@ body{
   color:$cyan;
   font-weight: 400;
   line-height: 2rem;
+  padding-bottom: .8rem;
 
   &.white{
     color: $white;
